@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  width: 35rem;
+  height: auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 85vw;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 80vw;
+    padding: 1rem;
+  }
+}
+
+.avatar {
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  height: 100px;
+  box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.36);
+}
+
+.name {
+  margin: 0;
+}
+
+.position {
+  font-size: 1.15em;
+  margin-top: 1em;
+}
+
+.testimony {
+  font-size: 1.1em;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 3.5em;
+  margin-right: 3em;
+}
+
+.text {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.quoteImg {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  filter: brightness(0) saturate(100%) opacity(0.8);
+}
+
+.quoteImg.left {
+  left: 1em;
+  top: -10px;
+}
+
+.quoteImg.right {
+  right: 1em;
+  bottom: -10px;
+}
