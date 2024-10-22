@@ -1,0 +1,102 @@
+.carouselCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light); /* Light shade of primary for dark mode */
+  color: var(--color-font-light); /* White font for dark mode */
+  width: 35rem;
+  height: 18rem;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .carouselCard {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselCard {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselCard {
+    width: 85vw;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .carouselCard {
+    width: 80vw;
+    padding: 1rem;
+  }
+}
+
+.avatar {
+  position: absolute;
+  top: -50px;
+  border: 6px solid var(--color-secondary-dark);
+  border-radius: 50%;
+  height: 100px;
+  box-shadow: 6px 6px 17px rgba(37, 34, 34, 0.36);
+}
+
+.name {
+  margin: 0;
+  color: var(--color-font-light); /* Darker primary color for light mode */
+}
+
+.position {
+  font-size: 1.15em;
+  margin-top: 1em;
+  font-weight: 600;
+  color: var(--color-font-light); /* Darker secondary color for light mode */
+}
+
+.testimony {
+  font-size: 1.1em;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 3.5em;
+  margin-right: 3em;
+  color: var(--color-font-light); /* Adjusted font color */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.text {
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 8em;
+}
+
+.quoteImg {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  filter: brightness(0.7) saturate(100%) sepia(1) hue-rotate(10deg) saturate(500%);
+  opacity: 1;
+}
+
+.quoteImg.left {
+  left: 1em;
+  top: -10px;
+}
+
+.quoteImg.right {
+  right: 1em;
+  bottom: -10px;
+}

@@ -1,0 +1,21 @@
+.sponsor-box {
+  margin: 50px;
+  display: 'inline-block';
+}
+.sponsor-image {
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .sponsor-box {
+    margin: 25px;
+    display: 'inline-block';
+  }
+  .sponsor-image {
+    width: 70px;
+    height: 70px;
+  }
+  .heading {
+    width: 50%;
+  }
+}

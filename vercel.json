@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/build/$1"
+    }
+  ],
+  "outputDirectory": "build"
+}

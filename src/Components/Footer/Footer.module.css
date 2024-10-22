@@ -1,0 +1,79 @@
+.Footer {
+  padding: 2rem 0;
+}
+
+.ft-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+.footer-icons i {
+  color: #4070f4;
+  font-size: 2.5rem;
+  padding: 0.4rem 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.ft-1 p {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 1.3rem;
+  /* padding: 0.5rem 5rem 0.5rem 0; */
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  padding: 1rem 0;
+}
+.ft-1 span {
+  display: flex;
+  align-items: center;
+}
+
+.ft-1 span img {
+  margin-right: 1rem;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+.brand {
+  margin-bottom: 10px;
+}
+
+/* .ft-1{
+    background-color: red;
+}
+
+.ft-2{
+    background-color: blue;
+}
+
+.ft-3{
+    background-color: yellow ;
+} */

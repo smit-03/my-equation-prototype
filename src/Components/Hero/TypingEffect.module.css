@@ -1,0 +1,25 @@
+.typewriter-container {
+  font-family: monospace;
+  font-size: 1.32em;
+  text-align: center;
+}
+
+.blinking-cursor {
+  color: black;
+}
+
+.blinking-cursor::after {
+  content: '|';
+  animation-name: blinking;
+  animation-duration: 0.71s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  from {
+    color: transparent;
+  }
+  to {
+    color: lightgrey;
+  }
+}

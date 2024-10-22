@@ -1,0 +1,60 @@
+.carousel-wrapper {
+  background-color: bisque;
+  height: 90vh;
+  margin: auto;
+}
+
+.carousel {
+  max-width: 85%;
+  margin: auto;
+}
+
+.card {
+  max-width: 60rem;
+}
+
+.heading {
+  display: block;
+  position: relative;
+  margin: 0.2rem auto;
+  width: 100%;
+  padding: 0.2rem 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-top: 2rem;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 42.5%;
+  width: 15%;
+  height: 0.1em;
+  background-color: var(--color-primary-default);
+  opacity: 0;
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}
+
+.heading:hover::after,
+.heading:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.heading::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.heading:hover::after,
+.heading:focus::after {
+  transform: scale(1);
+}
